@@ -8,7 +8,7 @@ import grpc
 class Calculator(calculator_pb2_grpc.calculatorServicer):
 
     def sum(self, request, context):
-        print(f'Recieved add request for: {request.num1} and {request.num2}')
+        print("Request for: " + str(request.num1) + " and " + str(request.num2))
         return calculator_pb2.SumResponse(res=request.num1 + request.num2)
     
 
