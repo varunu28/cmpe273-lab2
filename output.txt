@@ -1,0 +1,13 @@
+python3 calculator_server.py                                                                            varunu28@varun
+Starting server on port: 8000
+Server started
+Recieved add request for: 2 and 3
+Recieved add request for: 1 and 2
+
+// Client can take two optional arguments for getting the sum
+python3 calculator_client.py 2 3
+Sum: 5
+
+// In absence of optional arguments, it takes default values of 1 and 2
+python3 calculator_client.py
+Sum: 3
